@@ -1,0 +1,56 @@
+{
+  "name": "alwaysai-mac",
+  "version": "0.0.1",
+  "description": "alwaysai",
+  "main": "src/main.ts",
+  "author": {
+    "name": "alwaysAI inc",
+    "email": "dev@alwaysai.co",
+    "url": "https://alwaysai.co"
+  },
+  "licenses": [
+    {
+      "license": "UNLICENSED"
+    }
+  ],
+  "prettier": {
+    "endOfLine": "lf",
+    "singleQuote": true,
+    "printWidth": 90,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "electron": "6.0.7",
+    "electron-builder": "^22.3.6",
+    "prettier": "1.18.2"
+  },
+  "scripts": {
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --mac"
+  },
+  "build": {
+    "extends": null,
+    "appId": "com.electron.installer",
+    "productName": "alwaysAI",
+    "copyright": "Copyright © 2019 ${author}",
+    "mac" : {
+      "target": "pkg"
+    },
+    "pkg": {
+      "scripts": "scripts/hello_world.sh"
+    },
+    "dependencies": {
+      "analytics-node": "^3.4.0-beta.1",
+      "bootstrap": "^4.3.1",
+      "copy-to-clipboard": "^3.2.0",
+      "jquery": "^3.4.1",
+      "popper.js": "^1.15.0",
+      "tether": "^1.4.7"
+    },
+    "standard": {
+      "globals": [
+        "$"
+      ]
+    }
+  }
+}
