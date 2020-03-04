@@ -1,0 +1,161 @@
+:root {
+  --red-primary: #f2303a;
+  --red-light: #eb595e;
+  --red-lighter: #ff7d84;
+  --red-lightest: #ffbcbc;
+  --red-lightest-40: #ffe4e4;
+  --berry-black: #3d202c;
+  --berry-darkest: #570025;
+  --berry-darker: #740c32;
+  --berry-dark: #990838;
+  --berry-primary: #c92c56;
+  --ink-primary: #1c1e21;
+  --dark-grey: #292b2e;
+  --ink-darker: #474e57;
+  --ink-dark: #6b727a;
+  --ink-light: #9fa2a7;
+  --sky-dark: #b5bcc4;
+  --sky-primary: #ced3d9;
+  --sky-light: #e8eced;
+  --sky-lighter: #f7f9fa;
+  --white: #ffffff;
+  --blue-darker: #184573;
+  --blue-dark: #136cb0;
+  --blue-primary: #4cb6fc;
+  --blue-light: #8dd5ff;
+  --blue-lighter: #caedff;
+  --success-darker: #005953;
+  --success-dark: #0a9c8d;
+  --success-primary: #2bd5be;
+  --success-light: #a2f2e5;
+  --success-lighter: #d0f8f0;
+  --error-darker: #c43a07;
+  --error-dark: #e4562b;
+  --error-primary: #ff8465;
+  --error-light: #ffc9be;
+  --value-darker: #7e6403;
+  --value-dark: #bc9814;
+  --value-primary: #edc01c;
+  --value-light: #fadd84;
+  --value-lighter: #f7ecd0;
+}
+
+body {
+  background-image: url('background.svg');
+  overflow: hidden;
+  background-position-x: -13px;
+}
+
+.logo {
+  width: 143px;
+  height: 38px;
+  object-fit: contain;
+  margin-bottom: 32px;
+}
+
+.Thank-you-for-instal {
+
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.Find-and-add-models {
+
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white);
+margin-bottom: 40px;
+
+  
+}
+
+.To-get-started-open {
+
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.Resources {
+
+  opacity: 0.78;
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.Resources-links, .Resources-links a, .Resources-links a:hover {
+
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.get-starter-apps {
+  
+  height: 64px;
+  border-radius: 5px;
+  background-color: #3f2a32;
+   padding: 21px 16px;
+  display: flex;
+  font-family: SourceCodePro;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  color: var(--white);
+  margin-bottom: 76px;
+}
+
+.main{
+  text-align: center;
+  width: 402px;
+  padding: 40px 0;
+}
+.copy, .copy a, .copy a:hover{
+  margin-left: auto;
+  font-family: Karla;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  
+  color: var(--white);
+}

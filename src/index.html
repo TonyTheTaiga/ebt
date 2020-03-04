@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>AlwaysAI Installer</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Karla&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+   
+  </head>
+  <body>
+    <div class="container main text-center">
+    <img src="logo.svg"
+      class="logo">
+
+    <div class="Thank-you-for-instal">Thank you for installing alwaysAI. Using our Command-Line Interface you can:</div>
+    <div class="Find-and-add-models">Find and add models to your application.<br />
+        Deploy your application to your edge device.<br />
+        Start your application and see it in action.</div>
+        <div class="To-get-started-open">To get started, open a PowerShell terminal and download the starter applications:</div>
+        <div class="get-starter-apps"><div>PS C:\>aai get-starter-apps</div><div class="copy"><a href="#" onclick="copyToClipboard()">Copy</a></div></div>
+        <div style="text-align: left" >
+          <div class="Resources">Resources:</div>
+          <div class="Resources-links"><a href="https://dashboard.alwaysai.co/docs/getting_started/introduction.html">Docs</a></div>
+          <div class="Resources-links"><a href="https://dashboard.alwaysai.co/model-catalog">Model Catalog</a></div>
+          <div class="Resources-links"><a href="https://dashboard.alwaysai.co/">Dashboard</a></div>
+        </div>
+  </body>
+  <script src="renderer.js"></script>
+  <script>
+  $('body').on('click', '.Resources-links', (event) => {
+  event.preventDefault();
+  let link = event.target.href;
+  require("electron").shell.openExternal(link);
+});
+
+  function copyToClipboard(){
+    let copy = require('copy-to-clipboard')
+    copy('aai get-starter-apps');
+  }
+
+
+
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+  analytics.load("H9SHsAseGIYI6PjjNhBO6OSyzx4cJSUG");
+  analytics.track('Desktop App Loaded', {
+    category: 'Desktop',
+    label: 'Desktop App Loaded'
+  });
+  analytics.page();
+  }}();
+
+   
+
+  </script>
+</html>

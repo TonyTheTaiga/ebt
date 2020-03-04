@@ -33,24 +33,11 @@
     "appId": "com.electron.installer",
     "productName": "alwaysAI",
     "copyright": "Copyright © 2019 ${author}",
-    "mac" : {
+    "mac": {
       "target": "pkg"
     },
     "pkg": {
-      "scripts": "scripts/hello_world.sh"
-    },
-    "dependencies": {
-      "analytics-node": "^3.4.0-beta.1",
-      "bootstrap": "^4.3.1",
-      "copy-to-clipboard": "^3.2.0",
-      "jquery": "^3.4.1",
-      "popper.js": "^1.15.0",
-      "tether": "^1.4.7"
-    },
-    "standard": {
-      "globals": [
-        "$"
-      ]
+      "scripts": "../scripts/hello_world.sh"
     }
   }
 }
