@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# Install Python
+installer -pkg /Applications/alwaysAI.app/Contents/Resources/app/tmp/python-3.8.0.pkg -target /
+
+# Run Certificates Script
+sh '/Applications/Python 3.8/Install Certificates.command'
+
+# Run Update shell profile
+sh '/Applications/Python 3.8/Update Shell Profile.command'
+
+# Install Edgeiq wheel
+/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8 -m pip install /Applications/alwaysAI.app/Contents/Resources/app/tmp/edgeiq-0.11.2.dev61+g55c02d1-py3-none-macosx_x86_64.whl
+
+# Install Opencv
+/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8 -m pip install /Applications/alwaysAI.app/Contents/Resources/app/tmp/opencv_3.8.2-4.1.2.30-cp38-cp38-macosx_10_9_x86_64.whl
+
+# Istall python dependencies
+/Library/Frameworks/Python.framework/Versions/3.8/bin/python3.8 -m pip install pyusb eventlet Flask-SocketIO scipy dlib
+
+# Change user owership of this directory for site-packages
+chown -R $(whoami) $HOME/Library/Python/3.8 > /tmp/alwaysai.log
+
+# Update brew installed software
+brew upgrade
+
+# Install system dependencies
+brew install freetype harfbuzz ceres-solver ffmpeg
+
+exit 0
