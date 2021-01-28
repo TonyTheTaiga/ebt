@@ -20,7 +20,7 @@
     "trailingComma": "all"
   },
   "devDependencies": {
-    "electron": "6.0.7",
+    "electron": "9.4.0",
     "electron-builder": "^22.3.6",
     "prettier": "1.18.2"
   },
